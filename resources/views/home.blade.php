@@ -15,9 +15,15 @@
                     @endif
 
                     You are logged in!
+
+                    Admin Page: <a href="{{ url('/') }}/adminOnlyPage">{{ url('/') }}/adminOnlyPage</a>
+
+Member Page: <a href="{{ url('/') }}/memberOnlyPage">{{ url('/') }}/memberOnlyPage</a>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+
+
+
+
 @endsection

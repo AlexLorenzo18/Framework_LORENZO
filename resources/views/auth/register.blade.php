@@ -92,10 +92,9 @@
                         <div class="form-group row">
                             <label for="type" class="col-md-4 col-form-label text-md-right">{{ __('User Type:') }}</label>
 
-                            <select class=”form-control” name=”type” id=”type”>
-                                    <option value=”admin”>Admin</option>
-                                    <option value=”super_admin”>Super Admin</option>
-                                    <option value=”member”>Member</option>
+                            <select class="form-control" name="type" id="type">
+                                    <option value="admin">Admin</option>
+                                    <option value="member">Member</option>
                             </select>
                         </div>
 
