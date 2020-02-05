@@ -27,9 +27,14 @@ class HomeController extends Controller
     }
 
     public function admin(Request $req){
-        return view('middleware')->withMessage('Admin');
+
+        $users = auth()->user();
+
+         return view('adminOnlyPage', [
+        'users' => $users, 
+        ]);
         }
         public function member(Request $req){
-        return view('middleware')->withMessage('Member');
+        return view('adminOnlyPage')->withMessage('Member');
         }
 }

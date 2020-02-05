@@ -3,6 +3,9 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Http\Response;
+
+
 
 class AdminMiddleware
 {

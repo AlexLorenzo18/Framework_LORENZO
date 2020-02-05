@@ -3,6 +3,8 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Http\Response;
+
 
 class MemberMiddleware
 {
@@ -14,11 +16,12 @@ class MemberMiddleware
      * @return mixed
      */
     public function handle($request, Closure $next)
-{
-if ($request->user() && $request->user()->type != 'member')
-{
-return new Response(view('unauthorized')->with('role', 'MEMBER'));
-}
-return $next($request);
-}
+
+    {
+        if ($request->user() && $request->user()->type != 'member')
+        {
+        return new Response(view('unauthorized')->with('role', 'MEMBER'));
+        }       
+        return $next($request);
+        }
 }

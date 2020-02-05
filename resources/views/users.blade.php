@@ -17,6 +17,7 @@
       <th>skills</th>
       <th>level</th>
   </tr>
+  
   <tr>
       <td> {{ $users -> id }} </td>
       <td> {{ $users -> name }} </td>
